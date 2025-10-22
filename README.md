@@ -23,7 +23,7 @@ Persist theme selection using local storage
 ## Screenshots
 
 ### Tasks Page
-![Home Page Screenshot](./src/assets/Tasks.png)
+![Home Page Screenshot](.frontend/src/assets/Tasks.png)
 
 ### Users Page
 ![Tasks Page Screenshot](./src/assets/Users.png)
