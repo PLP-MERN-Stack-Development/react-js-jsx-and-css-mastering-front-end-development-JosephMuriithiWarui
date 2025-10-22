@@ -85,7 +85,9 @@ http://localhost:5173
 
 Project Structure
 src/
+
  ├── components/
+ 
  │    ├── Button.jsx       # Reusable button component
  │    ├── Card.jsx         # Card layout component
  │    ├── Navbar.jsx       # Navigation bar
