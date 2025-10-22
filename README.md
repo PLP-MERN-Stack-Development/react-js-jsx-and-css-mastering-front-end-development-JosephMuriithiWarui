@@ -1,70 +1,163 @@
-# React.js and Tailwind CSS Assignment
+### Task Management
 
-This assignment focuses on building a responsive React application using JSX and Tailwind CSS, implementing component architecture, state management, hooks, and API integration.
+Add new tasks
 
-## Assignment Overview
+Mark tasks as completed
 
-You will:
-1. Set up a React project with Vite and Tailwind CSS
-2. Create reusable UI components
-3. Implement state management using React hooks
-4. Integrate with external APIs
-5. Style your application using Tailwind CSS
+Delete tasks
 
-## Getting Started
+Filter tasks (All, Active, Completed)
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Install dependencies:
-   ```
-   npm install
-   ```
-4. Start the development server:
-   ```
-   npm run dev
-   ```
+### User Management
 
-## Files Included
+Fetch and display users from an API (e.g., JSONPlaceholder)
 
-- `Week3-Assignment.md`: Detailed assignment instructions
-- Starter files for your React application:
-  - Basic project structure
-  - Pre-configured Tailwind CSS
-  - Sample component templates
+Search and filter users
 
-## Requirements
+Theme Management
 
-- Node.js (v18 or higher)
-- npm or yarn
-- Modern web browser
-- Code editor (VS Code recommended)
+Toggle between light and dark modes
 
-## Project Structure
+Persist theme selection using local storage
 
-```
+## Screenshots
+
+### Tasks Page
+![Home Page Screenshot](./src/assets/Tasks.png)
+
+### Users Page
+![Tasks Page Screenshot](./src/assets/Users.png)
+
+
+### Responsive UI
+
+Works on mobile, tablet, and desktop
+
+Reusable Components
+
+Button, Card, Navbar, Footer
+
+### State Management
+
+Uses React Hooks: useState, useEffect, useContext
+
+Custom hook useLocalStorage for persistent tasks
+
+### API Integration
+
+Axios used for fetching data
+
+Handles loading and error states
+
+### Tech Stack
+
+React - Frontend library
+
+Tailwind CSS - Utility-first CSS framework
+
+React Router - Client-side routing
+
+Axios - API requests
+
+LocalStorage - Persist tasks and theme selection
+
+### Installation
+
+Clone the repository
+
+git clone <your-repo-url>
+cd frontend
+
+
+Install dependencies
+
+npm install
+
+
+Start the development server
+
+npm run dev
+
+
+Open the app in your browser:
+
+http://localhost:5173
+
+Project Structure
 src/
-├── components/       # Reusable UI components
-├── pages/           # Page components
-├── hooks/           # Custom React hooks
-├── context/         # React context providers
-├── api/             # API integration functions
-├── utils/           # Utility functions
-└── App.jsx          # Main application component
-```
+ ├── components/
+ │    ├── Button.jsx       # Reusable button component
+ │    ├── Card.jsx         # Card layout component
+ │    ├── Navbar.jsx       # Navigation bar
+ │    └── Footer.jsx       # Footer component
+ ├── pages/
+ │    ├── Home.jsx         # Home page
+ │    ├── Tasks.jsx        # Task manager page
+ │    └── Users.jsx        # User list page
+ ├── hooks/
+ │    └── useLocalStorage.js # Custom hook for local storage
+ ├── ThemeContext.jsx      # Light/dark theme context
+ └── App.jsx               # Main app with routing
 
-## Submission
+### Usage
+Task Management
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+Navigate to Tasks page
 
-1. Complete all required components and features
-2. Implement proper state management with hooks
-3. Integrate with at least one external API
-4. Style your application with Tailwind CSS
-5. Deploy your application and add the URL to your README.md
+Add tasks in the input box and press "Add"
 
-## Resources
+Click checkbox to mark completed
 
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/) 
+Delete tasks using the "Delete" button
+
+Filter tasks using the dropdown: All, Active, Completed
+
+User Management
+
+Navigate to Users page
+
+Users are fetched from JSONPlaceholder API (https://jsonplaceholder.typicode.com/users)
+
+Search users using the search input
+
+Pagination or infinite scroll can be implemented if needed
+
+Theme Management
+
+Toggle the light/dark mode button in Navbar
+
+Theme selection persists using localStorage
+
+Tailwind darkMode: 'class' is used for manual toggling
+
+Tailwind CSS Setup
+
+Installed Tailwind CSS with PostCSS:
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+
+
+
+
+index.css:
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+API Integration Example
+import { useEffect, useState } from "react";
+import axios from "axios";
+
+
+
+
+Contributing
+
+Contributions are welcome! Please open a pull request or issue if you have suggestions or improvements.
+
+License
+
+MIT License
