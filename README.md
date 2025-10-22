@@ -89,17 +89,29 @@ src/
  ├── components/
  
  │    ├── Button.jsx       # Reusable button component
+ 
  │    ├── Card.jsx         # Card layout component
+ 
  │    ├── Navbar.jsx       # Navigation bar
+ 
  │    └── Footer.jsx       # Footer component
+ 
  ├── pages/
+ 
  │    ├── Home.jsx         # Home page
+ 
  │    ├── Tasks.jsx        # Task manager page
+ 
  │    └── Users.jsx        # User list page
+ 
  ├── hooks/
+ 
  │    └── useLocalStorage.js # Custom hook for local storage
+ 
  ├── ThemeContext.jsx      # Light/dark theme context
+ 
  └── App.jsx               # Main app with routing
+ 
 
 ### Usage
 Task Management
